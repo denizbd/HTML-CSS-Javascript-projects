@@ -1,0 +1,44 @@
+section {
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/* need to have same name as the class */
+.the-pen {
+	background-image: url("the-pen.svg");
+	background-color: #ffffff;
+	background-position: center;
+}
+.is-mightier {
+	background-image: url("is-mightier.svg");
+	background-color: #000000;
+	background-position: center;
+}
+.than {
+	background-image: url("than.svg");
+	background-color: #ffffff;
+	background-position: center;
+}
+.the-sword {
+	background-image: url("the-sword.svg");
+	background-color: #000000;
+	background-position: center;
+}
+.end {
+	background-image: url("end.svg");
+	background-color: #00f10a;
+	background-position: center;
+}
+footer {
+	position: fixed;
+	bottom: 30px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+}
+@media (max-width: 800px) {
+  section {
+    background-attachment: scroll;
+    height: 75vw;
+  }
+}
