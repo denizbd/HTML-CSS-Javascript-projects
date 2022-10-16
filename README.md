@@ -1,2 +1,3 @@
 # HTML-CSS-Javascript-projects
-learning HTML,CSS,Javascript
+Learning HTML,CSS,Javascript just for fun!
+First Wesbite: https://the-pen-is-mightier-than-the-sword-610.superhi.com/
