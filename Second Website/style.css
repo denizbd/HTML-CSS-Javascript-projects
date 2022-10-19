@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+body {
+  font-family: 'Space Mono';
+  font-size: 14px;
+  line-height: 1.5;
+
+  background-color: #000000;
+  color: #eeeeee;
+
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+header,
+section,
+footer,
+p {
+  width: 100%;
+}
+
+.logo {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.company-info {
+  max-width: 350px;
+	margin-top: 175px;
+}
+.company-info2 {
+	max-width: 350px;
+	margin-top: 100px;
+}
+.image_1 {
+  max-width: 1200px;
+	margin-top: 80px;
+}
+
+.image_2 {
+  max-width: 630px;
+	margin-top: 100px;
+}
+
+.image_3 {
+  max-width: 1100px;
+	margin-top: 100px;
+}
+
+.image_4 {
+  margin-bottom: 50px;
+	margin-top: 100px;
+}
+
+.description {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 14px 27px;
+	margin-top: 30px;
+}
+
+a {
+  color: #6A6A6A;
+  text-decoration: none;
+}
+
+.process {
+  padding-bottom: 50px;
+  border-bottom: solid 1px #FFFFFF;
+  margin-bottom: 50px;
+	margin-top: 100px;
+}
+
+.company-process {
+  max-width: 450px;
+}
+
+footer {
+  background-color: #1a1a1a;
+  max-width: 1100px;
+  padding: 36px 48px;
+  margin-bottom: 174px;
+	margin-top: 80px;
+}
+.navspace {
+	padding-top: 50px;
+}
+
+/* making the page responsive */
+@media (max-width: 720px) {
+  body {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .logo {
+    margin-top: 36px;
+    margin-bottom: 22px;
+  }
+
+  h1 img {
+    width: 160px;
+  }
+
+  section {
+    margin-bottom: 56px;
+  }
+
+  footer {
+    width: auto;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: 0;
+  }
+
+  footer nav a {
+    display: block;
+    margin-bottom: 18px;
+  }
+}
