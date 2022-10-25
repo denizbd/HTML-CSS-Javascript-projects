@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+body {
+	font-family: "Work Sans";
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  color: #2F6A49;
+}
+
+header {
+  padding: 20px;
+  overflow: hidden;
+  background-color: #2F6A49;
+}
+header h1 {
+  height: 30px;
+  float: left;
+}
+header nav {
+  float: right;
+  margin-top: 3px;
+}
+header nav a {
+  font-size: 16px;
+  color: #ffff;
+  text-decoration: none;
+  margin-left: 12px;
+  font-weight: 700;
+}
+nav a:hover {
+  border-bottom: 2px solid #FFB6C4;
+}
+/* first section design */
+.hero {
+  background-image: url("header-background.svg");
+  background-size: cover;
+}
+h2 {
+  max-width: 800px;
+  font-size: 80px;
+  color: #fe5504;
+  padding: 275px 0px 275px 0px;
+  margin: 0px auto;
+  font-weight: 500;
+}
+/* second section design */
+.about {
+  background-color: #FFB6C4;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.about h3 {
+  font-size: 36px;
+  margin-bottom: 45px;
+  
+}
+.about p {
+  font-size: 26px;
+  width: 800px;
+  margin: 0 auto;
+}
+/* third section design */
+.food {
+  background-color: #FFDA00;
+  text-align: left;
+  overflow: hidden;
+}
+
+.food .foodtext{
+padding: 60px 80px 50px 80px;
+float: left;
+width: 50%;
+}
+.food img {
+  float: right;
+  width: 50%;
+}
+
+.food h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.food p {
+  max-width: 400px;
+  font-weight:500;
+}
+/* fourth section design */
+.quote {
+  background-color: #ffd7b3;
+}
+blockquote {
+  padding: 100px 0px 100px 00px;
+  margin: 0 auto;
+  font-size: 36px;
+  width: 700px;
+  font-weight: 500;
+}
+/* fifth section design */
+.gallery {
+  overflow: hidden;
+}
+.gallery img {
+  float: left;
+  width: 33.33%;
+}
+/* sixth section design */
+.find-us {
+  background-color: #2F6A49;
+  color: #FFB6C4;
+  overflow: hidden;
+}
+.find-us div {
+  width: 33.33%;
+  float: left;
+}
+.find-us div h3 {
+  margin: 70px auto 18px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffff;
+}
+.find-us div p {
+  max-width: 250px;
+  margin: 0 auto 18px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.find-us img {
+  max-width: 260px;
+  border-radius: 100%;
+  margin: 60px 0;
+}
+/* seventh section design */
+.logos {
+  background-color: #ffff;
+  color: #FE5504;
+  padding-top: 50px;
+  padding-bottom: 115px;
+}
+.logos p {
+  margin-bottom: 74px;
+  font-weight: 500;
+}
+.logos img { 
+  text-align: center;
+  vertical-align: middle;
+}
+.logos img.nyc {
+  width: 300px;
+  padding-left: 50px;
+}
+.logos img.meetup {
+  width: 200px;
+  padding-left: 50px;
+}
+.logos img.forbes {
+  width: 200px;
+  padding-left: 50px;
+}
+.logos img.airbnb {
+  width: 200px;
+  padding-left: 50px;
+}
+/* footer design */
+footer {
+  background-color: #FFB6C4;
+  overflow: hidden;
+  padding: 10px;
+}
+footer .logo {
+  width: 140px;
+  float: left;
+}
+footer .copyright {
+  font-size: 16px;
+  float: right;
+  font-weight: 500;
+}
+
+@media (max-width: 998px) {
+  .food .foodtext,
+  .food img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  header .headerlogo,
+  header nav {
+    float: none!important;
+    text-align: left;
+  }
+  
+  .headerlogo {
+    margin-bottom: 16px;
+  }
+  
+  nav a {
+    margin-left: 0;
+    margin-right: 24px;
+  }
+  
+  .hero h2 {
+    font-size: 30px;
+  }
+   .about p {
+    font-size: 26px;
+    width: 800px;
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .quote blockquote {
+    font-size: 36px;
+    width: 700px;
+    max-width: 85%;
+    padding: 100px 0;
+    margin: 0 auto;
+  }
+  .gallery img,
+  .find-us div {
+    width: 100%;
+  }
+  .find-us div h3 {
+    max-width: 270px;
+    margin: 30px auto 10px auto;
+  }
+
+  .find-us div p {
+    max-width: 270px;
+    margin: 0 auto 30px;
+  }
+  .find-us img {
+    max-width: 200px;
+    border-radius: 100%;
+    margin: 0 auto;
+  }
+  
+ .logos {
+    padding-bottom: 53px;
+  }
+  
+  .logos p {
+    margin-bottom: 15px;
+  }
+  .logos img {
+    display: block;
+    width: 100px;
+    margin: 15px auto;
+    text-align: center;
+  }
+
+}
+  
+ 
