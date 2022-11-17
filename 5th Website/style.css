@@ -1,0 +1,242 @@
+body {
+	font-family: Roboto;
+  font-size: 16px;
+	line-height: 1.5;
+}
+h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+header {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
+}
+.header-left,
+.header-right {
+	width: 40%;
+}
+.header-right {
+	text-align: right;
+}
+.header-left a {
+	margin-right: 35px;
+}
+
+.header-right a {
+	margin-left: 35px;
+}
+.logo img {
+	width: 300px;
+	vertical-align: middle;
+}
+.hero {
+	position: relative;
+	/* z-index brings hero image behind the header */
+	z-index: -1;
+	margin-top: -75px;
+}
+
+.about {
+	display: flex;
+}
+
+.about img,
+.about .information {
+	width: 50%;
+	padding: 65px;
+}
+
+.about img {
+	background-color: #2C9BFF;
+}
+
+.information {
+	background-color: #f9dbd7;
+  color: #2c9bff;
+}
+
+.about p {
+	font-size: 18px;
+}
+
+.store {
+	background-color: #F5F5F5;
+	padding-top: 50px;
+	padding-bottom: 90px;
+}
+
+.container {
+	width: 960px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* filter list design */
+.show-filters {
+	color: #BFBFB7;
+	display: none;
+	margin-bottom: 16px;
+}
+
+.filters {
+	margin-bottom: 28px;
+}
+
+.filters a {
+	padding-bottom: 4px;
+	border-bottom: 2px solid transparent;
+	margin-right: 24px;
+}
+
+.filters a.selected {
+	border-bottom: 2px solid #2C9BFF;
+}
+
+/* product designs */
+.products {
+	display: flex;
+	flex-wrap: wrap;
+}
+.product {
+	position: relative;
+	width: 33.33%;
+}
+
+/* footer design */
+footer {
+	background-color: #2C9BFF;
+	padding: 15px;
+}
+
+footer img {
+	width: 200px;
+}
+
+/* album covers overlay design */
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	top: 0;
+	left: 0;
+
+	background-color: rgba(44, 155, 255, 0.8);
+	opacity: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.product:hover .overlay {
+	opacity: 1;
+}
+
+/* media queries */
+/* mobile design */
+@media (max-width: 480px) {
+	body {
+		font-size: 14px;
+	}
+
+	.header-left a,
+	.header-right a {
+		font-size: 10px;
+	}
+
+	.hero {
+		margin-top: -55px;
+	}
+
+	.logo img {
+		width: 140px;
+	}
+
+	.product {
+		width: 100%;
+	}
+  .show-filters {
+		display: block !important;
+	}
+  .products {
+		display: block !important;
+    width: max-content;
+    margin-bottom: 8px;
+	}
+}
+h3{
+	font-size: 24px;
+}
+/* tablet design */
+@media (max-width: 960px) {
+	body {
+		font-size: 16px;
+	}
+
+	header {
+		padding: 18px;
+	}
+
+	.header-left a {
+		margin-right: 16px;	
+	}
+
+	.header-right a {
+		margin-left: 16px;
+	}
+
+	.hero {
+		margin-top: -60px;
+	}
+
+	.about img,
+	.about .information {
+		padding: 40px;
+	}
+
+	.container {
+		padding: 30px;
+	}
+  
+.product {
+	width: 50%;
+  margin-bottom: 20px;
+	}
+	.show-filters {
+		display: block;
+	}
+.products {
+		display: block !important;
+    width: max-content;
+    margin-bottom: 8px;
+	}
+	.products {
+		display: none;
+	}
+}
+
+/* guitar about design */
+@media (max-width: 785px) {
+	.about {
+		flex-direction: column-reverse;
+	}
+	.about img,
+	.about .information {
+		width: 100%;
+	}
+}
