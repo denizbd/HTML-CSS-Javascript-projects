@@ -10,3 +10,5 @@ Learning HTML,CSS,Javascript just for fun!
 4th Website: https://nasa-627.superhi.com/
 
 5th Website: https://hexagon-28.superhi.com/
+
+6th Website: https://boyce-slideshow-647.superhi.com/
