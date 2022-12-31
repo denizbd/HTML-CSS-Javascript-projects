@@ -1,0 +1,434 @@
+body {	
+	background-color: #ECC7AB;
+	color: #FFFFFF;
+
+	font-family: 'HK Grotesk';
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+h2 {
+	font-size: 120px;
+	line-height: 0.9;
+	letter-spacing: -3px;
+}
+
+
+header {
+	padding: 45px 50px;
+}
+
+a.menu-toggle {
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.38px;
+
+	position: fixed;
+	z-index: 20;
+	top: 45px;
+	right: 48px;
+}
+
+.eye-icon {
+	width: 28px;
+	margin-right: 12px;
+	display: none;
+}
+
+
+.menu {
+	background-color: #FFD363;
+	
+	width: 821px;
+	height: 100vh;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	z-index: 10;
+
+	transform: translateX(100%);
+	transition: transform 1s ease;
+}
+
+.menu .pages,
+.menu .social {
+	position: absolute;
+	right: 48px;
+}
+
+.menu .pages {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.menu .social {
+	bottom: 32px;
+}
+
+.menu a {
+	display: block;
+	line-height: 1;
+	text-align: right;
+}
+
+.menu .pages a {
+	font-size: 120px;
+}
+
+.menu .social a {
+	font-size: 30px;
+}
+
+
+.menu-open {
+	max-height: 100vh;
+	overflow: hidden
+}
+
+.menu-open .menu {
+	transform: none;
+}
+
+.menu-open .eye-icon {
+	display: inline-block;
+}
+
+
+section {
+	max-width: 100%;
+	position: relative;
+	margin: 0 auto;
+
+	display: flex;
+	align-items: center;
+}
+
+.circle, .square {
+	position: absolute;
+}
+
+.circle {
+	background-color: #D9A724;
+	width: 144px;
+	height: 144px;
+	border-radius: 100%;
+}
+
+.square {
+	background-color: #738DA0;
+	width: 150px;
+	height: 150px;
+}
+
+/* Clothes as natural as you are */
+.clothes {
+	width: 888px;
+	margin-bottom: 195px;
+}
+
+.clothes img {
+	width: 430px;
+}
+
+.clothes h2 {
+	width: 546px;
+	margin-left: -100px;
+}
+
+.clothes .circle {
+	top: 60px;
+	left: 0;
+	transform: translateX(-50%);
+}
+
+.clothes .square {
+	right: 558px;
+	bottom: 0;
+	transform: translateY(50%);
+}
+
+/* Doing one thing well */
+.one-thing-well {
+	width: 1116px;
+	margin-bottom: 240px;
+	max-width: 90%;
+	justify-content: flex-end;
+}
+
+.one-thing-well img {
+	width: 660px;
+}
+
+.one-thing-well .content {
+	width: 540px;
+	position: absolute;
+	left: 0;
+}
+
+.one-thing-well h2 {
+	margin-bottom: 56px;
+}
+
+.one-thing-well .circle {
+	top: 120px;
+	right: 660px;
+	transform: translateX(50%);
+}
+
+.one-thing-well .square {
+	right: 0;
+	transform: translateX(50%);
+}
+
+/* View lookbooks */
+.lookbook {
+	background-image: url(image_3.jpeg);
+	background-size: cover;
+
+	text-align: center;
+
+	padding-top: 266px;
+	padding-bottom: 203px;
+
+	margin-bottom: 240px;
+}
+
+.lookbook h2 {
+	max-width: 660px;
+	margin: 0 auto;
+}
+
+.lookbook .eye-icon {
+	width: 60px;
+	margin-bottom: 16px;
+}
+
+
+.spring-collection {
+	flex-direction: column;
+	text-align: center;
+	width: 900px;
+	margin-bottom: 240px;
+}
+
+.spring-collection h2 {
+	width: 540px;
+	max-width: 100%;
+	transform: translateY(-50%);
+}
+
+
+footer {
+	background-image: url(footer.svg);
+	font-size: 60px;
+	padding: 300px 0 40px;
+}
+
+footer nav.social {
+	width: 1100px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Animations */
+.clothes:hover img {
+  transform: rotate(-10deg);
+}
+
+.clothes:hover h2 {
+	transform: scale(1.15);
+}
+
+.one-thing-well:hover img {
+	transform: rotate(5deg);
+}
+
+.one-thing-well:hover .content {
+	transform: scale(0.9) translateY(-50%);
+	z-index: 30;
+}
+
+.lookbook:hover h2 {
+	color: rgba(255, 255, 255, 0.8);
+	transform: scale(1.1);
+}
+
+.spring-collection:hover h2 {
+	transform: scale(0.9) translateY(-160%);
+	color: rgba(255, 255, 255, 0.8);
+}
+
+section img,
+section h2,
+section .content {
+	transition: transform 0.5s ease;
+}
+
+/* making page responsive */
+@media (max-width: 1264px) {
+	.circle, .square {
+		width: 75px;
+		height: 75px;
+	}
+
+	footer {
+    background-image: url(footer.svg);
+    font-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 125px;
+    background-size: cover;
+	}
+
+	footer nav.social {
+		width: 100%;
+		text-align: center;
+		
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+@media (max-width: 960px) {
+	body {
+		font-size: 20px;
+	}
+	
+	header {
+		padding: 25px 32px 36px;
+	}
+
+	h2,
+	footer .social a {
+		font-size: 40px;
+		max-width: 100%;
+	}
+
+	/* Menu */
+	.menu .pages a {
+		font-size: 40px;
+	}
+
+	.menu .social a {
+		font-size: 20px;
+	}
+
+	/* Sections */
+	.clothes h2,
+	.one-thing-well h2 {
+		font-size: 60px;
+	}
+
+	section {
+		flex-direction: column;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.circle,
+	.square {
+		width: 45px;
+		height: 45px;
+	}
+
+	/* Clothes */
+	.clothes {
+		margin-bottom: 96px;
+	}
+
+	.clothes .circle {
+		top: 83px;
+		left: 32px;
+	}
+
+	.clothes .square {
+		bottom: 205px;
+		right: 32px;
+		transform: translateX(50%);
+	}
+
+	.clothes,
+	.one-thing-well {
+		max-width: 100%;
+	}
+
+	.clothes img,
+	.one-thing-well img {
+		width: 100%;
+	}
+
+	.clothes img {
+		margin-bottom: 16px;
+	}
+
+	.clothes h2 {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	/* One thing well */
+	.one-thing-well {
+		flex-direction: column-reverse;
+		margin-bottom: 61px;
+	}
+
+	.one-thing-well img {
+		margin-bottom: 30px;
+	}
+
+	.one-thing-well .content {
+		max-width: 100%;
+		position: relative;
+	}
+
+	.one-thing-well h2 {
+		margin-bottom: 30px;
+	}
+
+	.one-thing-well .circle {
+		left: 32px;
+		transform: translateX(-50%);
+	}
+
+	.one-thing-well .square {
+		right: 32px;
+		bottom: 286px;
+	}
+
+	.content {
+		position: relative;
+	}
+
+	/* Lookbook */
+	.lookbook {
+		padding-top: 68px;
+		padding-bottom: 68px;
+		margin-bottom: 42px;
+	}
+
+	.lookbook .eye-icon {
+		display: block;
+	}
+
+	/* Spring Collection */
+	.spring-collection {
+		margin-bottom: 36px;
+	}
+}
+
