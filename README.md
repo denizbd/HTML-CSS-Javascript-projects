@@ -3,7 +3,7 @@ Learning HTML,CSS,Javascript just for fun!
 
 1st Porject: https://the-pen-is-mightier-than-the-sword-610.superhi.com/
 
-2nd Project (responsive page): https://source-889.superhi.com/ 
+2nd Project (first responsive page): https://source-889.superhi.com/ 
 
 3rd Project: https://lola-132.superhi.com/
 
